@@ -11,43 +11,41 @@
         <script src="/static/js/vue.min.js"></script>
     </head>
     <body>
-        <div class="container">
-            <div class="page-header">
-                <div class="row">
-                    <div class="col-lg-2">
-                    </div>
-                    <div class="col-lg-8">
-                        <div class="text-center">
-                            <h1><strong>Stuck in VIM and can't get out?</strong></h1>
-                            <h2>Let's do this!</h2>
+        <div id="app">
+            <div class="container">
+                <div class="page-header">
+                    <div class="row">
+                        <div class="col-lg-2">
+                        </div>
+                        <div class="col-lg-8">
+                            <div class="text-center">
+                                <h1><strong>Stuck in VIM and can't get out?</strong></h1>
+                                <h2>Let's do this!</h2>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <div id="app">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="text-center">
-                            <h3><strong>{{ question }}</strong></h3>
-                        </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="text-center">
+                        <h3><strong>{{ question }}</strong></h3>
                     </div>
                 </div>
+            </div>
 
-                <div class="row">
-                    <template v-for="response in responses">
-                        <div v-bind:class="responseColumnWidth">
-                            <div class="text-center">
-                                <button class="btn btn-success"
-                                        v-on:click="updateState(response)">
-                                    <h4>{{ response.text }}</h4>
-                                </button>
-                            </div>
+            <div class="row">
+                <template v-for="response in responses">
+                    <div v-bind:class="responseColumnWidth">
+                        <div class="text-center">
+                            <button class="btn btn-success"
+                                    v-on:click="setState(response.nextState)">
+                                <h4>{{ response.text }}</h4>
+                            </button>
                         </div>
-                    </template>
-                </div>
+                    </div>
+                </template>
             </div>
         </div>
 

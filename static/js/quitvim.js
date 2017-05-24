@@ -103,8 +103,8 @@ new Vue({
     },
 
     methods: {
-        updateState(response) {
-            this.state = response.nextState;
+        setState(state) {
+            this.state = state;
         }
     }
 })
