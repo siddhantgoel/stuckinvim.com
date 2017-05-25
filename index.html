@@ -36,19 +36,18 @@
             </div>
 
             <div class="row">
-                <template v-for="response in responses">
-                    <div v-bind:class="responseColumnWidth">
-                        <div class="text-center">
-                            <button class="btn btn-success"
-                                    v-on:click="setState(response.nextState)">
-                                <h4>{{ response.text }}</h4>
-                            </button>
-                        </div>
+                <div v-bind:class="responseColumnWidth"
+                     v-for="response in responses">
+                    <div class="text-center">
+                        <button class="btn btn-success"
+                                v-on:click="setState(response.nextState)">
+                            <h4>{{ response.text }}</h4>
+                        </button>
                     </div>
-                </template>
+                </div>
             </div>
         </div>
 
-        <script src="/static/js/quitvim.js"></script>
+        <script src="/static/js/quit.js"></script>
     </body>
 </html>
