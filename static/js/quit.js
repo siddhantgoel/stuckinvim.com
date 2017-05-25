@@ -3,11 +3,11 @@ var script = {
         'question': 'Which mode are you in?',
         'responses': [
             {
-                'text': 'Normal',
+                'text': 'Normal Mode',
                 'nextState': 'USER_MODE_NORMAL'
             },
             {
-                'text': 'Insert',
+                'text': 'Insert Mode',
                 'nextState': 'USER_MODE_INSERT'
             },
             {
@@ -17,7 +17,7 @@ var script = {
         ]
     },
     'USER_MODE_NORMAL': {
-        'question': 'Cool! Do you want to save your changes to disk?',
+        'question': 'Do you want to save your changes to disk?',
         'responses': [
             {
                 'text': 'Yes',
@@ -33,13 +33,13 @@ var script = {
         'question': 'We need the "normal" mode first. Press Escape to do that.',
         'responses': [
             {
-                'text': 'OK',
+                'text': 'Done!',
                 'nextState': 'USER_MODE_NORMAL'
             }
         ]
     },
     'USER_MODE_DONT_KNOW': {
-        'question': 'No problem. Does the lowest line say "-- INSERT --"?',
+        'question': 'Does the bottom line say "-- INSERT --"?',
         'responses': [
             {
                 'text': 'Yes',
@@ -52,19 +52,19 @@ var script = {
         ]
     },
     'USER_WANTS_TO_SAVE_CHANGES': {
-        'question': 'Almost there! Press :wqa',
+        'question': 'OK! Press :wqa',
         'responses': [
             {
-                'text': 'OK',
+                'text': 'Done!',
                 'nextState': 'USER_DONE'
             }
         ]
     },
     'USER_DOES_NOT_WANT_TO_SAVE_CHANGES': {
-        'question': 'Almost there! Press :!qa',
+        'question': 'OK! Press :!qa',
         'responses': [
             {
-                'text': 'OK',
+                'text': 'Done!',
                 'nextState': 'USER_DONE'
             }
         ]
