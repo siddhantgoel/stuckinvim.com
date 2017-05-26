@@ -73,7 +73,7 @@ var script = {
         'question': 'You made it! Wasn\'t that fun? :)',
         'responses': [
             {
-                'text': 'Let\s do it again!',
+                'text': 'Start over!',
                 'nextState': 'INITIAL'
             }
         ]
