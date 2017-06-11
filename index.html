@@ -25,6 +25,29 @@
             body {
                 margin-top: 5em;
             }
+
+            /* https://gist.github.com/thunsaker/1188641 */
+            .ribbon {
+                background-color: #a00;
+                overflow: hidden;
+                position: absolute;
+                right: -3em;
+                top: 2.5em;
+                -moz-transform: rotate(45deg);
+                -webkit-transform: rotate(45deg);
+                -moz-box-shadow: 0 0 1em #888;
+                -webkit-box-shadow: 0 0 1em #888;
+            }
+            .ribbon a {
+                border: 1px solid #faa;
+                color: #fff;
+                display: block;
+                margin: 0.05em 0 0.075em 0;
+                padding: 0.5em 3.5em;
+                text-align: center;
+                text-decoration: none;
+                text-shadow: 0 0 0.5em #444;
+            }
         </style>
     </head>
     <body>
@@ -69,7 +92,7 @@
                         <div class="text-center">
                             <h4>
                                 Made by
-                                <a href="https://sgoel.org" target="_blank">that guy</a>
+                                <a href="https://sgoel.org" target="_blank">Siddhant Goel</a>
                                 because of
                                 <a href="https://stackoverflow.blog/2017/05/23/stack-overflow-helping-one-million-developers-exit-vim/" target="_blank">this</a>.
                             </h4>
@@ -77,6 +100,12 @@
                     </div>
                 </div>
             </div>
+        </div>
+
+        <div class="ribbon">
+            <a href="http://github.com/siddhantgoel/stuckinvim.com" target="_blank">
+                Edit me on GitHub
+            </a>
         </div>
 
         <script src="static/js/vue.min.js"></script>
