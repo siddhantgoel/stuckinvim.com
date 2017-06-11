@@ -3,16 +3,12 @@ var script = {
         'question': 'Which mode are you in?',
         'responses': [
             {
-                'text': 'Normal Mode',
+                'text': 'Normal',
                 'nextState': 'USER_MODE_NORMAL'
             },
             {
-                'text': 'Insert Mode',
-                'nextState': 'USER_MODE_INSERT'
-            },
-            {
-                'text': 'Replace Mode',
-                'nextState': 'USER_MODE_REPLACE'
+                'text': 'Insert/Replace/Visual',
+                'nextState': 'USER_MODE_NOT_NORMAL'
             },
             {
                 'text': 'What does mode mean?',
@@ -33,16 +29,7 @@ var script = {
             }
         ]
     },
-    'USER_MODE_INSERT': {
-        'question': 'We need the "normal" mode first. Press Escape to do that.',
-        'responses': [
-            {
-                'text': 'Done!',
-                'nextState': 'USER_MODE_NORMAL'
-            }
-        ]
-    },
-    'USER_MODE_REPLACE': {
+    'USER_MODE_NOT_NORMAL': {
         'question': 'We need the "normal" mode first. Press Escape to do that.',
         'responses': [
             {
@@ -52,14 +39,22 @@ var script = {
         ]
     },
     'USER_MODE_DONT_KNOW': {
-        'question': 'Does the bottom line say "-- INSERT --"?',
+        'question': 'What does the bottom line say?',
         'responses': [
             {
-                'text': 'Yes',
-                'nextState': 'USER_MODE_INSERT'
+                'text': '-- INSERT --',
+                'nextState': 'USER_MODE_NOT_NORMAL'
             },
             {
-                'text': 'No',
+                'text': '-- REPLACE --',
+                'nextState': 'USER_MODE_NOT_NORMAL'
+            },
+            {
+                'text': '-- VISUAL --',
+                'nextState': 'USER_MODE_NOT_NORMAL'
+            },
+            {
+                'text': 'Nothing',
                 'nextState': 'USER_MODE_NORMAL'
             }
         ]
