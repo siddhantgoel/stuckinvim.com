@@ -11,6 +11,10 @@ var script = {
                 'nextState': 'USER_MODE_INSERT'
             },
             {
+                'text': 'Replace Mode',
+                'nextState': 'USER_MODE_REPLACE'
+            },
+            {
                 'text': 'What does mode mean?',
                 'nextState': 'USER_MODE_DONT_KNOW'
             }
@@ -30,6 +34,15 @@ var script = {
         ]
     },
     'USER_MODE_INSERT': {
+        'question': 'We need the "normal" mode first. Press Escape to do that.',
+        'responses': [
+            {
+                'text': 'Done!',
+                'nextState': 'USER_MODE_NORMAL'
+            }
+        ]
+    },
+    'USER_MODE_REPLACE': {
         'question': 'We need the "normal" mode first. Press Escape to do that.',
         'responses': [
             {
