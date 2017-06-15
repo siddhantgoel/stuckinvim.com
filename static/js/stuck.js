@@ -69,7 +69,7 @@ var script = {
         ]
     },
     'USER_DOES_NOT_WANT_TO_SAVE_CHANGES': {
-        'question': 'OK! Type :!qa',
+        'question': 'OK! Type :qa !',
         'responses': [
             {
                 'text': 'Done!',
