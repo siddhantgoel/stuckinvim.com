@@ -69,7 +69,7 @@ var script = {
         ]
     },
     'USER_DOES_NOT_WANT_TO_SAVE_CHANGES': {
-        'question': 'OK! Press :!qa',
+        'question': 'OK! Press :qa!',
         'responses': [
             {
                 'text': 'Done!',
