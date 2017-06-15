@@ -30,7 +30,7 @@ var script = {
         ]
     },
     'USER_MODE_NOT_NORMAL': {
-        'question': 'We need the "normal" mode first. Press Escape to do that.',
+        'question': 'We need the “normal” mode first. Press Escape to do that.',
         'responses': [
             {
                 'text': 'Done!',
@@ -60,7 +60,7 @@ var script = {
         ]
     },
     'USER_WANTS_TO_SAVE_CHANGES': {
-        'question': 'OK! Press :wqa',
+        'question': 'OK! Type :wqa',
         'responses': [
             {
                 'text': 'Done!',
@@ -69,7 +69,7 @@ var script = {
         ]
     },
     'USER_DOES_NOT_WANT_TO_SAVE_CHANGES': {
-        'question': 'OK! Press :qa!',
+        'question': 'OK! Type :qa !',
         'responses': [
             {
                 'text': 'Done!',
@@ -78,7 +78,7 @@ var script = {
         ]
     },
     'USER_DONE': {
-        'question': 'You made it! Wasn\'t that fun? :)',
+        'question': 'You made it! Wasn’t that fun? :)',
         'responses': [
             {
                 'text': 'Start over!',
