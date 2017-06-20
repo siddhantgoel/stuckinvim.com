@@ -60,7 +60,7 @@ var script = {
         ]
     },
     'USER_WANTS_TO_SAVE_CHANGES': {
-        'question': 'OK! Type :wqa',
+        'question': 'Type :wqa',
         'responses': [
             {
                 'text': 'Done!',
@@ -69,7 +69,7 @@ var script = {
         ]
     },
     'USER_DOES_NOT_WANT_TO_SAVE_CHANGES': {
-        'question': 'OK! Type :qa!',
+        'question': 'Type :qa!',
         'responses': [
             {
                 'text': 'Done!',
