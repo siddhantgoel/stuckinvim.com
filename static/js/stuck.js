@@ -98,9 +98,6 @@ new Vue({
         },
         responses: function() {
             return script[this.state].responses;
-        },
-        responseColumnWidth: function() {
-            return 'col-lg-' + 12 / this.responses.length;
         }
     },
 

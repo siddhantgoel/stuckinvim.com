@@ -26,6 +26,13 @@
                 margin-top: 5em;
             }
 
+            /* https://stackoverflow.com/a/36151222/179729 */
+            .btn-primary-spacing
+            {
+                margin-right: 5px;
+                margin-bottom: 5px !important;
+            }
+
             /* https://gist.github.com/thunsaker/1188641 */
             .ribbon {
                 background-color: #a00;
@@ -77,10 +84,10 @@
                 </div>
 
                 <div class="row">
-                    <div v-bind:class="responseColumnWidth"
-                         v-for="response in responses">
+                    <div class="col-lg-12">
                         <div class="text-center">
-                            <button class="btn btn-success"
+                            <button v-for="response in responses"
+                                    class="btn btn-success btn-primary-spacing"
                                     v-on:click="setState(response.nextState)">
                                 <h4>{{ response.text }}</h4>
                             </button>
