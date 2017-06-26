@@ -7,10 +7,6 @@ var script = {
                 'nextState': 'USER_MODE_NORMAL'
             },
             {
-                'text': 'Ex',
-                'nextState': 'USER_MODE_EX'
-            },
-            {
                 'text': 'Insert/Replace/Visual',
                 'nextState': 'USER_MODE_NOT_NORMAL'
             },
@@ -42,15 +38,6 @@ var script = {
             }
         ]
     },
-    'USER_MODE_EX': {
-        'question': 'We need the “normal” mode first. Type “visual” to do that',
-        'responses': [
-            {
-                'text': 'Done!',
-                'nextState': 'USER_MODE_NORMAL'
-            }
-        ]
-    },
     'USER_MODE_DONT_KNOW': {
         'question': 'What does the bottom line say?',
         'responses': [
@@ -65,10 +52,6 @@ var script = {
             {
                 'text': '-- VISUAL --',
                 'nextState': 'USER_MODE_NOT_NORMAL'
-            },
-            {
-                'text': ': ',
-                'nextState': 'USER_MODE_EX'
             },
             {
                 'text': 'Nothing',
