@@ -1,5 +1,27 @@
 var script = {
     'INITIAL': {
+        'question': 'Is your caps lock key enabled?',
+        'responses': [
+            {
+                'text': 'Yes',
+                'nextState': 'USER_MODE_PAIN'
+            },
+            {
+                'text': 'No',
+                'nextState': 'USER_MODE_START'
+            }
+        ]
+    },
+    'USER_MODE_PAIN': {
+        'question': 'Disable your caps lock key',
+        'responses': [
+            {
+                'text': 'OK',
+                'nextState': 'USER_MODE_START'
+            }
+        ]
+    },
+    'USER_MODE_START': {
         'question': 'Which mode are you in?',
         'responses': [
             {
