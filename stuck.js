@@ -120,6 +120,7 @@ new Vue({
 
     data: function() {
         return {
+            show: true,
             state: 'INITIAL'
         };
     },
@@ -127,6 +128,7 @@ new Vue({
     methods: {
         setState(state) {
             this.state = state;
+            this.show = false;
         }
     }
 })
