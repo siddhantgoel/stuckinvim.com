@@ -120,15 +120,19 @@ new Vue({
 
     data: function() {
         return {
-            show: true,
+            capsWarning: true,
             state: 'INITIAL'
         };
     },
 
     methods: {
+        hideCapsWarning() {
+            this.capsWarning = false;
+        },
+
         setState(state) {
             this.state = state;
-            this.show = false;
+            this.capsWarning = false;
         }
     }
 })

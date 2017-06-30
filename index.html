@@ -46,8 +46,8 @@
                             name="fade"
                             enter-active-class="fade in"
                             leave-active-class="fade">
-                            <div class="alert alert-warning alert-dismissable" v-if="show" role="alert">
-                                <button type="button" class="close" v-on:click="show = false" aria-label="Close">
+                            <div class="alert alert-warning alert-dismissable" v-if="capsWarning" role="alert">
+                                <button type="button" class="close" v-on:click="hideCapsWarning" aria-label="Close">
                                     <span aria-hidden="true">×</span>
                                 </button>
                                 Before you start, ensure you have <kbd>Caps Lock</kbd> <strong>disabled</strong>.
