@@ -31,6 +31,15 @@ body {
     text-decoration: none;
     text-shadow: 0 0 0.5em #444;
 }
+
 .twitter-share-button[style] {
     vertical-align: text-bottom !important;
+}
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .5s
+}
+
+.fade-enter, .fade-leave-to {
+  opacity: 0
 }
