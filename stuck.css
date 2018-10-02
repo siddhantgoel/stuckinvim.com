@@ -1,5 +1,6 @@
 body {
     margin-top: 5em;
+    overflow-x: hidden;
 }
 
 /* https://stackoverflow.com/a/36151222/179729 */
