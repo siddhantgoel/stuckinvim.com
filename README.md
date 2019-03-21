@@ -1,4 +1,6 @@
-# stuckinvim.com
+# Stuck in VIM
+
+[![MadeWithVueJs.com shield](https://madewithvuejs.com/storage/repo-shields/1236-shield.svg)](https://madewithvuejs.com/p/stuck-in-vim/shield-link)
 
 ## About
 
