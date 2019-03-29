@@ -43,7 +43,7 @@ var script = {
         ]
     },
     'USER_MODE_EX': {
-        'question': 'We need the “normal” mode first. Type “visual” to do that',
+        'question': 'We need the “normal” mode first. Type “visual” to do that.',
         'responses': [
             {
                 'text': 'Done!',
@@ -77,7 +77,7 @@ var script = {
         ]
     },
     'USER_WANTS_TO_SAVE_CHANGES': {
-        'question': 'Type :wqa',
+        'question': 'Type :wqa and hit Enter.',
         'responses': [
             {
                 'text': 'Done!',
@@ -86,7 +86,7 @@ var script = {
         ]
     },
     'USER_DOES_NOT_WANT_TO_SAVE_CHANGES': {
-        'question': 'Type :qa!',
+        'question': 'Type :qa! and hit Enter.',
         'responses': [
             {
                 'text': 'Done!',
