@@ -95,7 +95,7 @@ var script = {
         ]
     },
     'USER_DONE': {
-        'question': 'You made it! Wasn’t that fun? :)',
+        'question': 'You made it! Wasn’t that fun? 🙂',
         'responses': [
             {
                 'text': 'Start over!',
