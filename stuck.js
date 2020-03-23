@@ -15,7 +15,7 @@ var script = {
                 'nextState': 'USER_MODE_NOT_NORMAL'
             },
             {
-                'text': 'What does mode mean?',
+                'text': 'What does “mode” mean?',
                 'nextState': 'USER_MODE_DONT_KNOW'
             }
         ]
