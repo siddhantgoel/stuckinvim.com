@@ -27,5 +27,5 @@ Please either [create an issue] or [open a pull request]. 🙂
 [blog post]: https://stackoverflow.blog/2017/05/23/stack-overflow-helping-one-million-developers-exit-vim/
 [create an issue]: https://github.com/siddhantgoel/stuckinvim.com/issues
 [open a pull request]: https://github.com/siddhantgoel/stuckinvim.com/pulls
-[stuckinvim.com]: https://stuckinvim.com
+[stuckinvim.com]: https://siddhantgoel.github.io/stuckinvim.com
 [VueJS]: https://vuejs.org
